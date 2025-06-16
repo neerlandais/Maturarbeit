@@ -1,0 +1,12 @@
+Webseiten:
+- https://www.elektronik-kompendium.de/
+- https://github.com/slu4coder/Minimal-64x4-Home-Computer/tree/main
+- https://github.com/jdah/jdh-8
+
+Bücher:
+- Digital Computer Electronics; Albert Paul Malvino, Jerald A. Brown
+ZB:
+- Microprocessors : principles and applications; Gilmore, Charles M
+- Mikroprozessoren für Anfänger; Fischer, Othmar
+- Informatik der Mikrocomputer : allgemeine Grundlagen und Einführung in den Aufbau und die Wirkungsweise von Mikroprozessoren und Mikrocomputern, sowie die Entwicklung von Assembler-Programmen auf einem Personal Computer; Hannemann, Dieter
+- Einführung in die Mikrocomputertechnik : Grundlagen - Programmierung - Schaltungstechnik; Scholze, Rainer

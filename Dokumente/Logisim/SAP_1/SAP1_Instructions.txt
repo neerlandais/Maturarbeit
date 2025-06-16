@@ -1,0 +1,25 @@
+0000 - ADD
+0001 - SUB
+
+Immediate:
+0010 - LDA
+0011 - LDB
+Absolute:
+0100 - LDA
+0101 - LDB
+
+Immediate:
+0110 - ADD
+0111 - SUB
+Absolute:
+1000 - ADD
+1001 - SUB
+
+1010 - OUT
+1011 - MAB
+(1100 - STA)
+
+1101 - NOP
+
+1110 - JMP
+1111 - HLT

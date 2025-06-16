@@ -1,0 +1,28 @@
+Ich will:
+herausfinden wie ein einfacher Mikroprozessor (z.B. 6502) aufgebaut ist.
+einen solchen entwerfen und aus Logik-ICs bauen.
+für diesen einen Assembler und programmieren.
+
+- Aufbau recherchieren und eigene Architektur (Befehlssatz, Aufbau) in Logisim-Evolution entwerfen.
+- Prozessor entwerfen und Module einzeln bauen, testen und zusammenfügen.
+- Einen Assembler und evtl. Testprogramm(e) programmieren.
+
+Architektur: ~3 Wochen
+Bau: Bis Ende der Sommerferien
+Software: Spätetstens bis zu den Herbstferien.
+Dokumentation: Sommerferien - Abgabe
+
+Arbeitsjournal
+Wöchentliche Treffen.
+
+Ressourcen:
+- SAP 1-3 aus "Digital Computer Electronics" als 
+- www.nand2tetris.org / "The Elements of Computing Systems"
+- https://github.com/slu4coder/Minimal-64x4-Home-Computer/tree/main
+- https://old.reddit.com/r/PrintedCircuitBoard/wiki/books#wiki_digital_design
+  # Scheint einen Link für alles zu haben
+- (https://github.com/jdah/jdh ?, Inspiration)
+
+Software:
+- Logisim (Evolution)
+- ( VHDL o.ä.? )
