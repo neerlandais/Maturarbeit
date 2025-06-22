@@ -1,0 +1,21 @@
+a = 0 1 1 2 3 5
+b = 1 0 0 1 1 2
+f = 0 0 1 1 2 3
+
+LDA 90
+LDB 1
+
+loop:
+ OUT
+ STA 0xF
+ ADD
+ LDB 0xF
+ JMP loop
+
+20
+31
+aa
+cf
+00
+5f
+e2

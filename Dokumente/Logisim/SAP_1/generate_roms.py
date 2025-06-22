@@ -5,24 +5,24 @@ microcode = {
     "Output PC" : 1,
     "Load PC" : 2,
     "Load MAR" : 3,
-    "Output RAM" : 4,
-    "Load Instruction" : 5,
-    "Output Instruction Argument" : 6,
-    "Load A" : 7,
-    "Output A" : 8,
-    "Load B" : 9,
-    "Load Out" : 10,
-    "Subtract" : 11,
-    "Output ALU" : 12,
-    "Halt" : 13
+    "Load RAM" : 4,
+    "Output RAM" : 5,
+    "Load Instruction" : 6,
+    "Output Instruction Argument" : 7,
+    "Load A" : 8,
+    "Output A" : 9,
+    "Load B" : 10,
+    "Load Out" : 11,
+    "Subtract" : 12,
+    "Output ALU" : 13,
+    "Halt" : 14
 }
 
-NOP = 0b0010101010010 # = 0x552 = 0d1362
+NOP = 0b00101010100010 # = 0xAA2 = 0d2722
 
 fetch = [["Fetch", 
          [["Output PC", "Load MAR"],
-          ["Increment PC"],
-          ["Output RAM", "Load Instruction"]], 
+          ["Increment PC", "Output RAM", "Load Instruction"]], 
          None]]
 
 instructions = [
@@ -64,6 +64,10 @@ instructions = [
       
     ["MAB", [["Output A", "Load B"]], 11],
     
+    ["STA",  [
+     ["Output Instruction Argument", "Load MAR"],
+     ["Output A", "Load RAM"]], 12],    
+
     ["JMP", [["Output Instruction Argument", "Load PC"]], 14],
 
     ["HLT", [["Halt"]], 15]
@@ -80,7 +84,7 @@ def gen_mi(instructions):
                 flags |= 2**microcode[mc]
             
             instruction[1][mi[0]] = flags
-        if len(instruction[1]) < 3:
+        if instruction[0] != "Fetch" and len(instruction[1]) < 3:
             instruction[1].append(NOP)    
         
     return instructions

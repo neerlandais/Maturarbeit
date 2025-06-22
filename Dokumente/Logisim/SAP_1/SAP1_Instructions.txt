@@ -17,7 +17,7 @@ Absolute:
 
 1010 - OUT
 1011 - MAB
-(1100 - STA)
+1100 - STA
 
 1101 - NOP
 
