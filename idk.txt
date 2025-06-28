@@ -1,6 +1,0 @@
-Um mich mit Logisim-Evolution vertraut zu machen, habe ich den SAP-1 aus 'Digital Computer Electronics' darin nachgebaut. Einige Dinge, habe ich abgeändert übernommen: Steuersignale habe ich der Verständnis halber alle als High-Aktiv modelliert, weil der Unterschied zwischen High- und Low-Aktiven Signalen keine funktionale Bedeutung hatte. Ausserdem habe ich nicht Kontroll-Logik vom Schaltplan übernommen, sondern als Alternative mit einem Adress- und einem Kontroll-EEPROM ersetzt, was im Buch als Alternative vorgeschlagen wird. 
-
-Weil ich nicht nur die Befehle aus dem Buch übernehmen wollte, habe ich selbst schnell einen umfangreicheren Befehlssatz entworfen, z.B. mit unmittelbar- und direkt adressierten Varianten von ADD. Um Änderungen schnell übernehmen zu können, habe ich ein Python-Skript geschrieben, das das Adress- und Kontroll-ROM für den Prozessor generieren konnte.
-
-Um den Prozessor zu testen, schrieb ich ein Programm, dass die Fibonacci-Reihe (bis 233) ausrechnet und ausgibt. Dies wäre ohne unbedingte Sprünge und einem Speicherbefehl nicht möglich (ohne JMP einfach nur sehr repetitiv) gewesen, weshalb ich den Prozessor noch um diese Funktionen erweiterte.
-
