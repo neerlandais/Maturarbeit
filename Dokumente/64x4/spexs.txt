@@ -1,0 +1,60 @@
+- Little Endian
+
+ALU:
+ - Addieren / Subtrahieren
+ - AND,OR, XOR
+ - Zero / Carry / Negative Flags
+ Chip(s):
+  -
+
+Register:
+ - Befehlsregister 8b
+ - Speicheradressregister 16b (zwei 8b Chips -> Zeropage-Befehle?)
+ - 
+ Chip(s):
+  -
+
+Speicherlayout:
+ -
+
+Kontrolllogik:
+ - EEPROM / Flash: einfach, iterieren möglich
+ -
+ Chip(s):
+  -
+
+Program Counter:
+ - 
+ Chip(s):
+  -
+
+
+Serielle Schnittstelle:
+ -
+
+Sonstige Schnittstellen:
+(- einfach den Bus freilegen?)
+(- Ton generieren?)
+ - Output/Debugging LEDs bei Register(n)
+
+
+Kontrollsignale:
+ XE, EO, EC, ES
+ 
+ AO, XO, BO
+ AI, XI, BI
+
+ II
+
+ FI
+
+ RO, RI
+ 
+ MLI, MHI, MC, MTP, MZ
+
+ PLI, PHI, PC
+
+ FF
+
+ SR
+ 

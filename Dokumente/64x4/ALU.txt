@@ -1,0 +1,23 @@
+	Control Bits:
+
+ES C_In EO
+
+000: -
+001: a + b
+010: AND
+011: a + b + 1
+100: OR
+101: a - b - 1
+110: XOR
+111: a - b
+
+010
+100
+110
+
+
+	Flags:
+
+Zero
+Carry
+Negative
