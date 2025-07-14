@@ -7,10 +7,18 @@ flag_num = 2** 4
 fetch_mi = ["RO","II","MC","PC"]
 
 instructions = [
-    ["NOP", None, [["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"]]],
-    ["ADI", None, [["BI","RO","PC","MC"],["EO","AI","FI","SR"]]],
-    ["BNZ", None, [["RO","PLI","MC"], ["RO","PHI"],["FF","MTP","MLI","MHI","SR"]]],
-    ["BNZ", 0b0100, [["FF","PC","MC","SR"]]]
+    ["NOP", None,   [["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"],["FF"]]],
+    
+    ["ADI", None,   [["RO","BI","PC","MC"],["EO","AI","FI","SR"]]],
+    ["ADZ", None,   [["RO","MLI","MZ","MHI","PC"],["RO","BI"],["EO","AI","FI","MTP","MLI","MHI","SR"]]],
+    ["ADB", None,   [["RO","BI","PC","MC"],["RO","MHI","PC"],["BO","MLI"],["RO","BI"],["EO","AI","FI","MTP","MLI","MHI","SR"]]],
+    
+    ["SUI", None,   [["RO","BI","PC","MC"],["EO","ES","EC","AI","FI","SR"]]],
+    ["SUZ", None,   [["RO","MLI","MZ","MHI","PC"],["RO","BI"],["EO","ES","EC","AI","FI","MTP","MLI","MHI","SR"]]],
+    ["SUB", None,   [["RO","BI","PC","MC"],["RO","MHI","PC"],["BO","MLI"],["RO","BI"],["EO","ES","EC","AI","FI","MTP","MLI","MHI","SR"]]],
+    
+    ["BNZ", None,   [["RO","PLI","MC"],["RO","PHI"],["FF","MTP","MLI","MHI","SR"]]],
+    ["BNZ", 0b0010, [["FF","PC","MC","SR"]]]
 ]
 
 rom = [0 for i in range(256*flag_num*steps)]
